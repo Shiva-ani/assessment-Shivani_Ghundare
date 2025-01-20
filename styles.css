@@ -1,0 +1,304 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Email container */
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8fafa; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.header-logo {
+    width: 110px; 
+    height: auto; 
+}
+
+.header-text {
+    flex: 1; 
+    margin-left: 20px; 
+    font-size: 16px; 
+    color: #555555; 
+    text-align: left; 
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .header-logo {
+        width: 80px;
+    }
+
+    .header-text {
+        margin-left: 0; 
+        font-size: 14px; 
+        margin-top: 10px; 
+    }
+}
+
+
+/* Image section */
+.image-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #f8fafa; 
+}
+
+.responsive-image {
+    width: 100%; 
+    max-width: 560px; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .image-section {
+        padding: 10px; 
+    }
+
+    .responsive-image {
+        max-width: 90%; 
+        border-radius: 6px; 
+    }
+}
+
+
+/* Main content styles */
+.main-content h2,
+.features h3 {
+    color: #007c6c;
+    text-align: center; /* Center heading text */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007c6c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 30px;
+    text-align: center; 
+    margin-left: 150px; /* Center horizontally */
+    margin-right: 150px; /* Center horizontally */
+    display: block; 
+}
+
+/* Features section */
+.features {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5; 
+}
+
+.features-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Indvidual  styling */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width for mobile view */
+    max-width: 400px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    color: #00695c;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    color: #616161;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    .features-container {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .feature {
+        width: 300px; 
+    }
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .feature {
+        width: 90%; /* Full width with padding on mobile */
+        max-width: 400px; /* Prevent it from being too wide */
+        margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+
+    .feature-icon {
+        width: 60px; /* Smaller icon */
+        height: 60px;
+    }
+
+    .features-heading {
+        font-size: 20px; /* Slightly smaller font for mobile */
+    }
+
+    .feature h3 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .feature p {
+        font-size: 13px; /* Adjust paragraph size */
+    }
+}
+
+
+/* Line Styling */
+.custom-line {
+    width: 560px;
+    height: 0;
+    border: 1px solid #002B2B;
+    margin: 20px auto; /* Center the line horizontally */
+    opacity: 1; /* Ensure the line is visible */
+}
+
+/* Image Module */
+.image-module {
+    text-align: center; /* Center-align the image module */
+    margin: 20px 0; /* Add spacing above and below the image */
+}
+
+.image-module img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Preserve aspect ratio */
+    display: block; /* Center the image block */
+    margin: 0 auto;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-paragraph {
+    margin: 0 0 10px;
+}
+
+.footer-list {
+    padding-left: 20px;
+    margin: 0 0 20px;
+}
+
+.custom-line {
+    border: none;
+    border-top: 2px solid #00695c; 
+    margin: 20px 0;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-center-text {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.image-module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-image {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .custom-line {
+        width: 95%; 
+    }
+
+    .footer-heading {
+        font-size: 1rem; 
+    }
+
+    .footer-paragraph {
+        font-size: 14px; 
+    }
+
+    .footer-list {
+        padding-left: 15px; 
+    }
+
+    .footer-image {
+        width: 80px; 
+        height: 30px;
+    }
+}
